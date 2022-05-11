@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Syntaq.Falcon.Application</AssemblyName>
+    <PackageId>Syntaq.Falcon.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Syntaq.Falcon</RootNamespace>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="7.1.0" />
+    <PackageReference Include="NPOI" Version="2.5.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Syntaq.Falcon.Application.Shared\Syntaq.Falcon.Application.Shared.csproj" />
+    <ProjectReference Include="..\Syntaq.Falcon.Core\Syntaq.Falcon.Core.csproj" />
+    <ProjectReference Include="..\Syntaq.Falcon.EntityFrameworkCore\Syntaq.Falcon.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>
